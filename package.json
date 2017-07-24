@@ -1,0 +1,13 @@
+{
+  "name": "timestamp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Velenir <velenir@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "serverless": "^1.18.0"
+  },
+  "scripts": {
+    "dev:release": "serverless deploy"
+  }
+}
