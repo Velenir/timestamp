@@ -1,0 +1,18 @@
+service: timestamp
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+functions:
+  getDate:
+    handler: handler.getDate
+    events:
+      - http:
+          path: /
+          method: get
+          cors: true
+      - http:
+          path: /{datestr}
+          method: get
+          cors: true
